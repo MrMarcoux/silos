@@ -10,6 +10,7 @@ class GrainSilo {
 }
 
 class TargetSiloState {
+  id: Integer
   scheduled: DateTime
   mass: Gram
   relativeHumidity: Percent
