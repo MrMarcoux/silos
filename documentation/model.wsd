@@ -1,0 +1,21 @@
+@startuml model
+
+class GrainSilo {
+  id: Integer
+  capacity: Litre
+  occupancy: Litre
+  mass: Gram
+  relativeHumidity: Percent
+  temperature: Kelvin
+}
+
+class TargetSiloState {
+  scheduled: DateTime
+  mass: Gram
+  relativeHumidity: Percent
+  temperature: Kelvin 
+}
+
+TargetSiloState --> GrainSilo
+
+@enduml
